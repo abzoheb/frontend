@@ -6,51 +6,53 @@ function App() {
     <div className="App">
       <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+        <a href="#">Achivements</a>
+        <a href="#">History</a> 
+        <a href="#">Reset</a>
+        <a href="#">Turn off</a>
       </div>
       <div id="main">
-        <button class="openbtn" onclick="openNav()">&#9776; MENU</button>
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
       </div>
-      <div></div>
-      <div className='column'>
-        <div>
-          <img src='./images/Exercise.png' alt='dog' />
-          <button className='index_button' ><div><b>EXERCISE</b></div></button>
-        </div>
-        <div>
-          <img src='./images/healthy_diet.png' alt='read' />
-          <button className='index_button'><div><b>HEALTHY DIET</b></div></button>
-        </div>
-        <div>
-          <img src='./images/learning.png' alt='eat' />
-          <button className='index_button'><div><b>LEARNING</b></div></button>
+      <div className='cols'>
+        <div className='column'>
+          <div>
+            <img className='image'  src='./images/Exercise.png' alt="Cinque Terre" width="140" height="100" />
+            <div className='index_button' ><div><b>PHYSICAL EXERCISE</b></div></div>
+          </div>
+          <div>
+            <img className='image' src='./images/healthy_diet.png' alt='read' width="140" height="100"/>
+            <div className='index_button'><div><b>HEALTHY DIET</b></div></div>
+          </div>
+          <div>
+            <img className='image' src='./images/learning.png' alt='eat' width="140" height="100" />
+            <div className='index_button'><div><b>STUDY</b></div></div>
+          </div>
+        
+          <div>
+            <img className='image' src='./images/meditation.png' alt='run' width="140" height="100" />
+            <div className='index_button'><div><b>MEDITATION </b></div></div>
+          </div>
+          <div>
+            <img className='image' src='./images/sleep.png' alt='smoke' width="140" height="100" />
+            <div className='index_button'><div><b>SLEEP</b></div></div>
+          </div>
+          <div>
+            <img className='image' src='./images/water.png' alt='teeth' width="140" height="100"  />
+            <div className='index_button'><div><b>WATER </b></div></div>
+          </div>
+          <div>
+            <img className='image' src='./images/hygiene.png' alt='zo' width="140" height="100"  />
+            <div className='index_button'><div><b> HYGIENE</b></div></div>
+          </div>
+          <div>
+          <img className='image' src='./images/prayer.png' alt='zo' width="140" height="100"  />
+            <div className='index_button'><div><b> prayer</b></div></div>
+            <b></b> 
+          </div>
         </div>
       </div>
-      <div className='column'>
-        <div>
-          <img src='./images/meditation.png' alt='run' />
-          <button className='index_button'><div><b>MEDITATION</b></div></button>
-        </div>
-        <div>
-          <img src='./images/sleep.png' alt='smoke' />
-          <button className='index_button' ><div><b>SLEEP</b></div></button>
-        </div>
-        <div>
-          <img src='./images/water.png' alt='teeth' />
-          <button className='index_button'><div><b>WATER</b></div></button>
-        </div>
-        <div>
-          <img src='./images/hygiene.png' alt='zo' />
-          <button className='index_button'><div><b>HYGIENE</b></div></button>
-        </div>
-        <div>
-          {/* <img src='' alt='sd'/> 
-          <b></b> */}
-        </div>
-      </div>
+
     </div>
   );
 }
